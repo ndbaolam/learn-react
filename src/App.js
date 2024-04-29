@@ -8,8 +8,8 @@ function App() {
     <>
       <Tabs />
       <Todo />
-      {/*<ProductState /> */}
-      <UseEffect />
+      <ProductState />
+      {/*<UseEffect />*/}
     </>
   );
 }
