@@ -1,0 +1,45 @@
+.tabs{
+  top: 0;
+  width: 100%;
+  position: sticky;
+  z-index: 10;
+  display: flex;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  background: #fff;
+
+  &__item{
+    margin-right: 30px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+}
+
+.tabs__content{
+  display: none;
+  position: absolute;
+  z-index: 9;
+  margin-left: 10px;
+  padding: 5px;
+  background: rgba(59, 59, 59, 0.9);
+  width: fit-content;
+  height: 200px;
+  overflow-y: scroll;
+  border-radius: 5px;
+
+  ul {
+    list-style-type: none;
+    li{
+      font-weight: 400;
+      color: #fff;
+      margin: 3px;
+    }
+  }
+
+  &--active{
+    @extend .tabs__content;
+    display: flex;
+  }
+}
